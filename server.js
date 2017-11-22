@@ -7,7 +7,8 @@ const bcrypt = require('bcrypt');
 const session = require('express-session')
 
 
-app.get('/', (req, res)=>res.send("Hello World!"))
+app.use(express.static('./public'))
+app.get('/', (req, res)=>res.send('index.html'))
 
 app.listen(port, ()=> console.log('App listening on port 3030')) 
 
