@@ -23,5 +23,5 @@ const UserSchema = db.Schema({
     }
 });
 
-var User = db.model('User',UserSchema);
+var User = db.model('User', UserSchema);
 module.exports = User;
