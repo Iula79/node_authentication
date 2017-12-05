@@ -3,9 +3,9 @@ var router = express.Router()
 var User = require('../models/user')
 var path = require('path');
 
+
 router.get('/', function (req,res){
     console.log( );
-    // res.sendFile('/Users/giulialake/exercises/node_authentication/public/index.html')
     res.sendFile(path.join(__dirname , '../public/index.html'))
 })
 
